@@ -6,13 +6,6 @@ import com.tingco.codechallenge.elevator.api.Elevator;
 import com.tingco.codechallenge.elevator.config.ElevatorApplication;
 import com.tingco.codechallenge.elevator.impl.SimpleElevatorController;
 
-/*
- import static org.junit.Assert.assertEquals;
- import org.junit.Test;
- import org.junit.runner.RunWith;
- import org.springframework.boot.test.SpringApplicationConfiguration;
- import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
- */
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -148,7 +141,7 @@ public class IntegrationTest {
 		assertEquals("Elevator with id 1 should be on floor 12", 12, elevators.get(1).currentFloor());
 		assertEquals("Elevator with id 2 should be on floor 14", 14, elevators.get(2).currentFloor());
 		assertEquals("Elevator with id 3 should be on floor 3", 3, elevators.get(3).currentFloor());
-		assertEquals("Elevator with id 4 should be on floor 15", 15, elevators.get(4).currentFloor());
-		assertEquals("Elevator with id 5 should be on floor 14", 14, elevators.get(5).currentFloor());
+		assertEquals("Elevator with id 4 should be on floor 14", 14, elevators.get(4).currentFloor());
+		assertEquals("Elevator with id 5 should be on floor 15", 15, elevators.get(5).currentFloor());
 	}
 }
